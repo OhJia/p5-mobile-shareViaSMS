@@ -1,0 +1,22 @@
+{
+  "name": "shareViaSMS",
+  "version": "1.0.0",
+  "description": "share url via sms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OhJia/p5-mobile-shareViaSMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OhJia/p5-mobile-shareViaSMS/issues"
+  },
+  "homepage": "https://github.com/OhJia/p5-mobile-shareViaSMS",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
