@@ -4,13 +4,14 @@
     <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
     <title>Share via SMS</title>
     <link rel="stylesheet" href="../shared/css/base.css" />
+    <link rel="javascript" href="server.js" />
   </head>
   <body>
     <h1>Share via SMS</h1>
     <div id="container">
-      <form action="demo_form.asp">
+      <form id="frm1" action="/send" method="POST">
         Paste URL here: <input type="text" name="link"><br>
-        Phone number: <input type="text" name="pnumber"><br>
+        Phone number: <input type="text" name="number"><br>
         <input type="submit" value="Submit">
       </form>
     </div>

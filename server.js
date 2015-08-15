@@ -2,6 +2,7 @@
 //var twilio = require('twilio');
 var express = require('express');
 var bodyParser = require('body-parser');
+var pass = require('./pass');
 
 // Create a simple Express web app that will parse incoming POST bodies
 var app = express();
@@ -9,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var port = process.env.PORT || 4000;
 
 //require the Twilio module and create a REST client
-var client = require('twilio')('AC2f20bf9fdd574cad79e8ebd2c96d8230', '5299ec9932c2e364d8601c7f36320f83');
+var client = require('twilio')(pass.ACCOUNT_SID, pass.AUTH_TOKEN);
 
 
 // Create a route to render the home page
@@ -37,7 +38,7 @@ app.post('/send', function(request, response) {
         to: toNumber,
         body: url,
         // This is the MMS-enabled number you purchased previously
-        from: '+19175252304'
+        from: pass.T_NUMBER
     }, function(err, messageData) {
         if (err) {
             response.send('Oops, there was an error :(');

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/OhJia/p5-mobile-shareViaSMS",
   "dependencies": {
-    "express": "^4.13.3"
+    "body-parser": "^1.12.2",
+    "express": "^4.13.3",
   }
 }
